@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "next": "12.2.4",
@@ -14,7 +15,21 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "eslint": "8.21.0",
-    "eslint-config-next": "12.2.4"
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.21.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-next": "12.2.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^8.0.1",
+    "postcss": "^8.4.14",
+    "prettier": "2.7.1",
+    "tailwindcss": "^3.1.8"
   }
 }
