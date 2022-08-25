@@ -9,11 +9,14 @@ module.exports = {
   theme: {
     // extend: {},
     screens: {
+      xsm: '450px',
+      // => @media (min-width: 450px) { ... }
+
       sm: '640px',
       // => @media (min-width: 640px) { ... }
 
-      md: '768px',
-      // => @media (min-width: 768px) { ... }
+      md: '770px',
+      // => @media (min-width: 770px) { ... }
 
       lg: '1024px',
       // => @media (min-width: 1024px) { ... }

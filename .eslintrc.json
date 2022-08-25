@@ -14,25 +14,31 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "ecmaVersion": "latest",
+    "ecmaVersion": 13,
     "sourceType": "module"
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    // "prettier/prettier": [
-    //   "error",
-    //   {
-    //     "singleQuote": true,
-    //     "endOfLine": "auto"
-    //   }
-    // ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ],
     "no-console": "off",
     "no-alert": "off",
     "no-unused-vars": "off",
+    "camelcase": "off",
     "@next/next/no-page-custom-font": "off",
     "react/no-unescaped-entities": "off",
     "react/react-in-jsx-scope": "off",
+    "react/jsx-no-bind": "off",
     "react/prop-types": "off",
-    "react/jsx-props-no-spreading": "off"
+    "react/jsx-props-no-spreading": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off"
   }
 }
