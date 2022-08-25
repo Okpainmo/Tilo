@@ -1,7 +1,8 @@
 import React from 'react';
+import HomePage from './home-page/index';
 
 function index() {
-  return <div className="text-blue-500">Where I find you</div>;
+  return <HomePage />;
 }
 
 export default index;
