@@ -40,7 +40,7 @@ function CoinItem({ coin }) {
       </div>
       <div
         className={`last-24-hours w-2/12 xl:w-[10%] flex justify-center items-center text-[13.5px] ${
-          price_change_percentage_24h > 0 ? 'gain-alert' : 'loss-alert'
+          price_change_percentage_24h > 0 ? 'gain-alert-color' : 'loss-alert-color'
         }`}
       >
         {price_change_percentage_24h.toFixed(2)}%
