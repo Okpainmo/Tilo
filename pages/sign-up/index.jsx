@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import Footer from '../../components/layout/Footer';
-import SignUpCard from './components/SignUpCard';
+// import Footer from '../../components/layout/Footer';
+import SignUpCard from '../../components/sign-up-page/SignUpCard';
 import UserAccessLayout from '../../components/layout/UserAccessLayout';
 
 function SignInPage() {

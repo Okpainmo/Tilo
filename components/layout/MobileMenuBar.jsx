@@ -23,7 +23,7 @@ function MobileMenuBar({ hideMobileNav, closeMobileNav }) {
         </svg>
       </div>
       <div className="flex flex-col gap-y-6 text-2xl font-bold text-left min-h-[300px] border-b">
-        <Link href="/watchlist">
+        <Link href="/coin-watchlist">
           <a className="nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700">
             <span>Coin watchlist</span>
           </a>

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import SignInCard from './components/SignInCard';
+import SignInCard from '../../components/sign-in-page/SignInCard';
 import UserAccessLayout from '../../components/layout/UserAccessLayout';
 
 function SignInPage() {

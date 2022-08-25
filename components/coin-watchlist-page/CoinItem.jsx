@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 
@@ -46,8 +45,12 @@ function CoinItem({ coin }) {
       >
         {price_change_percentage_24h.toFixed(2)}%
       </div>
-      <div className="hidden xl:flex xl:w-[17%] items-center justify-center">{total_volume}</div>
-      <div className="hidden xl:flex xl:w-[18%] items-center justify-center">{market_cap}</div>
+      <div className="hidden xl:flex xl:w-[17%] items-center justify-center">
+        {total_volume.toLocaleString()}
+      </div>
+      <div className="hidden xl:flex xl:w-[18%] items-center justify-center">
+        {market_cap.toLocaleString()}
+      </div>
       <div className="last-7-days w-3/12 xl:w-[25%] flex flex-row-reverse">
         <Sparklines data={sparkline_in_7d.price}>
           <SparklinesLine color="teal" />

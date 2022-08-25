@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
 import MainAppLayout from '../../components/layout/MainAppLayout';
-import CoinItem from './components/CoinItem';
+import CoinItem from '../../components/coin-watchlist-page/CoinItem';
 
 // const axios = require('axios');
 
@@ -25,13 +25,13 @@ function WatchPage({ coinData }) {
             <div className="w-2/12 text-center font-bold montserrat xl:w-[10%]">Coin</div>
             <div className="w-3/12 text-center font-bold montserrat xl:w-[10%]">Price</div>
             <div className="w-2/12 font-bold montserrat xl:w-[10%] text-center">24h</div>
-            <div className="hidden xl:inline-block text-center font-bold montserrat xl:w-[15%]">
+            <div className="hidden xl:inline-block text-center font-bold montserrat xl:w-[17%]">
               Total vol
             </div>
-            <div className="hidden xl:inline-block text-center font-bold montserrat xl:w-[15%]">
+            <div className="hidden xl:inline-block text-center font-bold montserrat xl:w-[18%]">
               Mkt cap
             </div>
-            <div className="w-3/12 text-center font-bold montserrat xl:w-[30%]">Last 7 days</div>
+            <div className="w-3/12 text-center font-bold montserrat xl:w-[25%]">Last 7 days</div>
           </div>
           {coinData.map((coin) => {
             return <CoinItem coin={coin} key={coin.id} />;
