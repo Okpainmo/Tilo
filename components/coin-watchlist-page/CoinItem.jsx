@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 
 function CoinItem({ coin }) {
@@ -30,16 +31,20 @@ function CoinItem({ coin }) {
       </div>
       <div className="w-1/12 xl:w-[5%] flex justify-center items-center">{market_cap_rank}</div>
       <div className="coin w-2/12 xl:w-[10%] flex flex-col justify-center text-center">
-        <div className="w-[25px] h-[25px] relative mx-auto z-10">
-          <Image src={image} alt={`${name} logo`} layout="fill" />
-        </div>
-        <span className="pt-[5px]">{symbol}</span>
+        <Link href="/coins/1">
+          <a className="xsm:w-[50px] mx-auto">
+            <div className="w-[25px] h-[25px] relative mx-auto z-10">
+              <Image src={image} alt={`${name} logo`} layout="fill" />
+            </div>
+            <span className="pt-[5px]">{symbol}</span>
+          </a>
+        </Link>
       </div>
-      <div className="price w-3/12 xl:w-[10%] flex justify-center items-center text-[13.5px]">
+      <div className="price w-[calc(25%_-_15px)] xl:w-[10%] flex justify-center items-center text-[13.5px]">
         ${`${current_price.toLocaleString()}`}
       </div>
       <div
-        className={`last-24-hours w-2/12 xl:w-[10%] flex justify-center items-center text-[13.5px] ${
+        className={`last-24-hours w-[calc(16.66%_+_15px)] xl:w-[10%] flex justify-center items-center text-[13.5px] ${
           price_change_percentage_24h > 0 ? 'gain-alert-color' : 'loss-alert-color'
         }`}
       >

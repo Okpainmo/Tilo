@@ -23,8 +23,12 @@ function WatchPage({ coinData }) {
               <div className="w-1/2 font-bold montserrat text-center">#</div>
             </div>
             <div className="w-2/12 text-center font-bold montserrat xl:w-[10%]">Coin</div>
-            <div className="w-3/12 text-center font-bold montserrat xl:w-[10%]">Price</div>
-            <div className="w-2/12 font-bold montserrat xl:w-[10%] text-center">24h</div>
+            <div className="w-[calc(25%_-_15px)] text-center font-bold montserrat xl:w-[10%]">
+              Price
+            </div>
+            <div className="w-[calc(16.66%_+_15px)] font-bold montserrat xl:w-[10%] text-center">
+              24h
+            </div>
             <div className="hidden xl:inline-block text-center font-bold montserrat xl:w-[17%]">
               Total vol
             </div>

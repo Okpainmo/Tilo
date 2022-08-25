@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import Link from 'next/link';
 import Socials from '../Socials';
 import NewsletterSection from '../NewsletterSection';
+import UserAuthLinks from '../UserAuthLinks';
 
 function MobileMenuBar({ hideMobileNav, closeMobileNav }) {
   return (
@@ -39,7 +40,10 @@ function MobileMenuBar({ hideMobileNav, closeMobileNav }) {
           </a>
         </Link>
       </div>
-      <div className="pt-6 pb-8 border-b">
+      <div className="pt-8 pb-8 border-b gap-6 sm:gap-12 flex flex-col sm:flex-row sm:items-center">
+        <div className="flex gap-6 items-center">
+          <UserAuthLinks />
+        </div>
         <Socials />
       </div>
       <NewsletterSection />

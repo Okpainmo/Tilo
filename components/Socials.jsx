@@ -2,7 +2,7 @@ import React from 'react';
 
 function Socials() {
   return (
-    <div className="socials mt-3 md:mt-4 text--colors_primary">
+    <div className="socials text--colors_primary">
       <ul className="flex gap-6">
         <li className="btn--colors_rounded border p-[7px] rounded-full">
           <svg

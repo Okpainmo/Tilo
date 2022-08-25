@@ -9,9 +9,11 @@ function Footer() {
         <div className="brand text--colors_primary montserrat text-3xl font-bold md:w-1/2 lg:w-1/3">
           tilo.
         </div>
-        <Socials />
+        <div className="mt-3 md:mt-4">
+          <Socials />
+        </div>
       </div>
-      <div className="menu-items flex gap-x-20 md:w-1/2 lg:w-1/3">
+      <div className="menu-items flex justify-between gap-x-4 md:w-1/2 lg:w-1/3">
         <div>
           <h4 className="text--colors_primary font-bold text-base">Tilo Services</h4>
           <ul className="flex flex-col gap-y-3 pt-4 text-[12px]">
