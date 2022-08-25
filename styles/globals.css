@@ -22,3 +22,119 @@ a {
 * {
   box-sizing: border-box;
 }
+
+/* 
+============================
+google font-customization 
+============================
+*/
+
+@layer utilities {
+  .m-serif {
+    font-family: 'Merriweather', serif;
+  }
+
+  .nunito-sans {
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+  .montserrat {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer utilities {
+  /* 
+=========================================================
+colour configuration using native tailwind css colours
+=========================================================
+*/
+
+  /** customized texts **/
+
+  .text--colors_default {
+    @apply text-black dark:text-white;
+  }
+
+  .text--colors_primary {
+    @apply text-purple-900 dark:text-purple-600;
+  }
+
+  .text--colors_secondary {
+    @apply text-gray-400 dark:text-gray-100;
+  }
+
+  .gain-alert-color {
+    @apply text-green-600;
+  }
+
+  .loss-alert-color {
+    @apply text-red-600;
+  }
+
+  .nav-link-colors {
+    @apply text-purple-900 dark:text-white;
+  }
+
+  /** customized buttons **/
+
+  .btn--colors_regular {
+    @apply bg-purple-900 dark:bg-purple-600 text-white;
+  }
+
+  .btn--colors_rounded {
+    @apply border-purple-900 dark:border-purple-600 bg-purple-50;
+  }
+
+  /** customized backgrounds **/
+
+  .bg--default {
+    @apply bg-white dark:bg-slate-900;
+  }
+
+  .bg--secondary {
+    @apply bg-gray-400 dark:bg-gray-100;
+  }
+
+  /** customized input **/
+
+  .custom--input {
+    @apply bg-gray-200 dark:bg-gray-50;
+  }
+
+  /* 
+===================================================================================
+custom styles configured withing the layer directive to aid/provide re-usability
+===================================================================================
+*/
+
+  .nav--bg_light {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .nav--bg_dark {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* 
+=================
+regular styles
+=================
+*/
+
+nav {
+  @apply nav--bg_light dark:nav--bg_dark;
+  box-shadow: 0 5px 13px rgb(0 0 0 / 5%);
+  backdrop-filter: blur(15px);
+}
+
+.nav--slide-in {
+  transform: translateX(0);
+  transition: transform 0.5s ease;
+}
+
+.nav--slide-out {
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+}
