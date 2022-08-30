@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 // import axios from 'axios';
 import MainAppLayout from '../../components/layout/MainAppLayout';
-import CoinItem from '../../components/coin-watchlist-page/CoinItem';
+import CoinItem from '../../components/coins-watchlist-page/CoinItem';
 
 // const axios = require('axios');
 

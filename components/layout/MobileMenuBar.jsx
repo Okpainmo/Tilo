@@ -24,12 +24,12 @@ function MobileMenuBar({ hideMobileNav, closeMobileNav }) {
         </svg>
       </div>
       <div className="flex flex-col gap-y-6 text-2xl font-bold text-left min-h-[300px] border-b">
-        <Link href="/coin-watchlist">
+        <Link href="/coins-watchlist">
           <a className="nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700">
             <span>Coin watchlist</span>
           </a>
         </Link>
-        <Link href="/trending-coins">
+        <Link href="/trending-coins-watchlist">
           <a className="nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700">
             <span>Trending Coins</span>
           </a>

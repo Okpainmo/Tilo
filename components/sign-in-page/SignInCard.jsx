@@ -3,7 +3,7 @@ import React from 'react';
 function SignInCard() {
   return (
     <section
-      className="sign-in-card w-full xsm:w-[350px] mx-auto py-10 px-6"
+      className="sign-in-card w-full xsm:w-[350px] mx-auto py-10 px-6 dark:border dark:rounded"
       style={{ boxShadow: '0 0 26px -10px rgba(50, 50, 50, 0.4)' }}
     >
       <form action="#" className="sign-in-form">

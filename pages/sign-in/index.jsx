@@ -17,7 +17,7 @@ function SignInPage() {
         </h3>
       </section>
       <SignInCard />
-      <div className="text-center mt-4 mb-28 text-[14px]">
+      <div className="text-center mt-4 mb-40 text-[14px]">
         <span>New to tilo? </span>
         <Link href="/sign-up">
           <a className="text--colors_primary">create an account</a>

@@ -30,10 +30,7 @@ function CoinPage({ coinDetails }) {
             <div className="text-xl">
               Price:{' '}
               <span className="text--colors_secondary">
-                $
-                {market_data.current_price.usd > 0
-                  ? market_data.current_price.usd.toLocaleString()
-                  : market_data.current_price.usd.toFixed(6).toLocaleString()}
+                ${market_data.current_price.usd.toLocaleString()}
               </span>
             </div>
           </div>
@@ -43,7 +40,7 @@ function CoinPage({ coinDetails }) {
             <SparklinesLine color="teal" />
           </Sparklines>
           <div className="text--colors_secondary text-[13px] text-center">
-            {name} market performance chart for the last seven(7) days.
+            Bitcoin market performance chart for the last seven(7) days.
           </div>
         </div>
         <section className="flex flex-col gap-4 mt-6">
@@ -68,13 +65,13 @@ function CoinPage({ coinDetails }) {
             <div className="flex flex-col">
               <span className="font-bold mb-2 text-base">24h high</span>
               <span className="text--colors_secondary">
-                ${market_data.high_24h.usd.toFixed(6).toLocaleString()}
+                ${market_data.high_24h.usd.toLocaleString()}
               </span>
             </div>
             <div className="flex flex-col">
               <span className="font-bold mb-2 text-base">24h Low</span>
               <span className="text--colors_secondary">
-                ${market_data.low_24h.usd.toFixed(6).toLocaleString()}
+                ${market_data.low_24h.usd.toLocaleString()}
               </span>
             </div>
           </div>

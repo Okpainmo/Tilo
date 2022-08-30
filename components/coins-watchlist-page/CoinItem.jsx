@@ -4,6 +4,7 @@ import { Sparklines, SparklinesLine } from 'react-sparklines';
 
 function CoinItem({ coin }) {
   const {
+    id,
     symbol,
     current_price,
     image,
@@ -31,7 +32,7 @@ function CoinItem({ coin }) {
       </div>
       <div className="w-1/12 xl:w-[5%] flex justify-center items-center">{market_cap_rank}</div>
       <div className="coin w-2/12 xl:w-[10%] flex flex-col justify-center text-center">
-        <Link href="/coins/1">
+        <Link href={`/coins/${id}`}>
           <a className="xsm:w-[50px] mx-auto">
             <div className="w-[25px] h-[25px] relative mx-auto z-10">
               <Image src={image} alt={`${name} logo`} layout="fill" />
