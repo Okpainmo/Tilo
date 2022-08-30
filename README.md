@@ -12,3 +12,4 @@ Tilo is a superb NextJS cryptocurrency app to help traders trade cryptocurrencie
 2. Tailwind CSS
 3. Redux tool-kit
 4. Firebase
+5. Crypto APIs (thanks to coingecko)
