@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Head from 'next/head';
 import Footer from './Footer';
 import MobileMenuBar from './MobileMenuBar';
 import Navbar from './Navbar';

@@ -16,7 +16,9 @@ function Navbar({ showMobileNav }) {
     >
       <Link href="/">
         <a>
-          <div className="brand text--colors_primary montserrat text-2xl font-bold">tilo.</div>
+          <div className="brand text--colors_primary montserrat text-2xl font-bold italic">
+            tilo.
+          </div>
         </a>
       </Link>
       <Navlinks />

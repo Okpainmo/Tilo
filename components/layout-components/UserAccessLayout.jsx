@@ -12,10 +12,8 @@ function UserAccessLayout({ children }) {
       <div className="fixed top-[25px] right-[25px]">
         <DynamicThemeSwitcher />
       </div>
-      <main className="pt-16 px-3">
-        {children}
-        <Footer />
-      </main>
+      <main className="pt-16 px-[12px]">{children}</main>
+      <Footer />
     </>
   );
 }
