@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import SignInCard from '../../components/sign-in-page/SignInCard';
-import UserAccessLayout from '../../components/layout/UserAccessLayout';
+import SignInCard from '../../components/sign-in-page-components/SignInCard';
+import UserAccessLayout from '../../components/layout-components/UserAccessLayout';
 
 function SignInPage() {
   return (
@@ -9,7 +9,9 @@ function SignInPage() {
       <section className="text-center">
         <Link href="/">
           <a>
-            <div className="brand text--colors_primary montserrat text-3xl font-bold">tilo.</div>
+            <div className="brand text--colors_primary montserrat text-3xl font-bold italic">
+              tilo.
+            </div>
           </a>
         </Link>
         <h3 className="mt-3 mb-4 font-bold montserrat text--colors_secondary rounded-lg">

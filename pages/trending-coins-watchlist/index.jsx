@@ -1,7 +1,7 @@
 import React from 'react';
 // import Link from 'next/link';
-import MainAppLayout from '../../components/layout/MainAppLayout';
-import TrendingCoinItem from '../../components/trending-coins-watchlist-page/TrendingCoinItem';
+import MainAppLayout from '../../components/layout-components/MainAppLayout';
+import TrendingCoinItem from '../../components/trending-coins-watchlist-page-components/TrendingCoinItem';
 
 function TrendingCoinsPage({ trendingCoins }) {
   // console.log(trendingCoins);
