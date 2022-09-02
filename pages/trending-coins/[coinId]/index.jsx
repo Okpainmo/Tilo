@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 import sanitizeHtml from 'sanitize-html';
 
-import MainAppLayout from '../../../components/layout/MainAppLayout';
+import MainAppLayout from '../../../components/layout-components/MainAppLayout';
 
 function CoinPage({ coinDetails }) {
   console.log(coinDetails);

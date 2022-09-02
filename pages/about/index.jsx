@@ -1,6 +1,6 @@
 import React from 'react';
-import MainAppLayout from '../../components/layout/MainAppLayout';
-import AboutContent from '../../components/about-page/AboutContent';
+import MainAppLayout from '../../components/layout-components/MainAppLayout';
+import AboutContent from '../../components/about-page-components/AboutContent';
 
 function AboutPage() {
   return (

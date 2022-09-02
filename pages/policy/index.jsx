@@ -1,6 +1,6 @@
 import React from 'react';
-import MainAppLayout from '../../components/layout/MainAppLayout';
-import PolicyContent from '../../components/policy-page/PolicyContent';
+import MainAppLayout from '../../components/layout-components/MainAppLayout';
+import PolicyContent from '../../components/policy-page-components/PolicyContent';
 
 function PolicyPage() {
   return (
