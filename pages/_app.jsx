@@ -1,3 +1,6 @@
+import React from 'react';
+
+// import Preloader from '../components/Preloader';
 import '../styles/globals.css';
 // import NavbarContext from '../contexts/NavbarContext';
 
