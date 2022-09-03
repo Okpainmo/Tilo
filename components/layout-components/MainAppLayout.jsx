@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Footer from './Footer';
 import MobileMenuBar from './MobileMenuBar';
 import Navbar from './Navbar';
+import Preloader from '../Preloader';
 
 function MainAppLayout({ children }) {
   const [closeMobileNav, setCloseMobileNav] = useState(true);
@@ -18,12 +19,15 @@ function MainAppLayout({ children }) {
   console.log(closeMobileNav);
 
   return (
-    <div className="overflow-hidden">
-      <MobileMenuBar hideMobileNav={hideMobileNav} closeMobileNav={closeMobileNav} />
-      <Navbar showMobileNav={showMobileNav} />
-      <div className="pt-20">{children}</div>
-      <Footer />
-    </div>
+    <>
+      <Preloader />
+      <div className="overflow-hidden">
+        <MobileMenuBar hideMobileNav={hideMobileNav} closeMobileNav={closeMobileNav} />
+        <Navbar showMobileNav={showMobileNav} />
+        <div className="pt-20">{children}</div>
+        <Footer />
+      </div>
+    </>
   );
 }
 

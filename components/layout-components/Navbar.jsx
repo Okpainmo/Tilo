@@ -11,8 +11,9 @@ const DynamicThemeSwitcher = dynamic(() => import('../ThemeSwitcher'), {
 function Navbar({ showMobileNav }) {
   return (
     <nav
-      className="w-full py-2 px-3 md:px-4 lg:px-16 flex justify-between
+      className="bg--glass w-full py-2 px-3 md:py-4 md:px-4 lg:px-16 flex justify-between
     z-20 items-center montserrat fixed top-0 left-0 right-0"
+      style={{ boxShadow: '0 5px 13px rgb(0 0 0 / 5%)' }}
     >
       <Link href="/">
         <a>

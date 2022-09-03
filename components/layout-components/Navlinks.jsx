@@ -3,7 +3,12 @@ import Link from 'next/link';
 
 function Navlinks() {
   return (
-    <section className="hidden lg:flex ml-20 font-bold mr-auto gap-6 text--colors_primary text-[10px]">
+    <section className="hidden lg:flex ml-20 font-bold mr-auto gap-6 text--colors_primary text-[11px]">
+      <Link href="/">
+        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+          <span>Home</span>
+        </a>
+      </Link>
       <Link href="/coins-watchlist">
         <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
           <span>Coin watchlist</span>

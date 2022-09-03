@@ -30,8 +30,8 @@ google font-customization
 */
 
 @layer utilities {
-  .m-serif {
-    font-family: 'Merriweather', serif;
+  .poppins {
+    font-family: 'Poppins', sans-serif;
   }
 
   .nunito-sans {
@@ -108,11 +108,11 @@ custom styles configured withing the layer directive to aid/provide re-usability
 ===================================================================================
 */
 
-  .nav--bg_light {
+  .trans--bg_light {
     background-color: rgba(255, 255, 255, 0.3);
   }
 
-  .nav--bg_dark {
+  .trans--bg_dark {
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -123,9 +123,8 @@ regular styles
 =================
 */
 
-nav {
-  @apply nav--bg_light dark:nav--bg_dark;
-  box-shadow: 0 5px 13px rgb(0 0 0 / 5%);
+.bg--glass {
+  @apply trans--bg_light dark:trans--bg_dark;
   backdrop-filter: blur(15px);
 }
 
@@ -137,4 +136,20 @@ nav {
 .nav--slide-out {
   transform: translateX(-100%);
   transition: transform 0.5s ease;
+}
+
+@keyframes loader-anim {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.preloader {
+  animation-name: loader-anim;
+  animation-duration: 1.75s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
