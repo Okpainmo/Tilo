@@ -10,7 +10,8 @@ import CoinItem from '../../components/coins-watchlist-page-components/CoinItem'
 
 function WatchPage({ coinData }) {
   console.log(coinData);
-  const notify = () =>
+
+  const exploreNotify = () =>
     toast(
       <div>
         click on any of the coin icons below{' '}
@@ -19,8 +20,10 @@ function WatchPage({ coinData }) {
       </div>
     );
 
+  const loadingNotify = () => toast('Just a moment, coin data is being fetched');
+
   useEffect(() => {
-    notify();
+    exploreNotify();
   }, []);
 
   return (
@@ -62,7 +65,7 @@ function WatchPage({ coinData }) {
             <div className="w-3/12 text-center font-bold montserrat xl:w-[25%]">Last 7 days</div>
           </div>
           {coinData.map((coin) => {
-            return <CoinItem coin={coin} key={coin.id} />;
+            return <CoinItem coin={coin} key={coin.id} loadingNotify={loadingNotify} />;
           })}
         </section>
       </main>
