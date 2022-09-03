@@ -10,25 +10,25 @@ function HomePage() {
   return (
     <MainAppLayout>
       <main className="md:w-4/5 mx-auto xsm:px-[8px] sm:px-12 lg:w-full">
-        <section className="hero-section px-[12px] flex flex-col lg:flex-row lg:gap-20 xl:gap-28 lg:mt-16 xl:w-[86%] xl:mx-auto">
-          <div className="illustration w-full h-[350px] relative xsm:mt-8 lg:order-2">
+        <section className="hero hero-section px-[12px] flex flex-col lg:flex-row lg:gap-20 xl:gap-28 lg:mt-16 xl:w-[86%] xl:mx-auto">
+          <div className="illustration w-full h-[350px] relative mt-8 lg:order-2">
             <Image src={Illustration} alt="tilo-illustration" layout="fill" />
           </div>
-          <div className="flex flex-col w-full xsm:mt-8 lg:order-1 lg:mt-12">
-            <div className="intro-text text-4xl font-[900] lg:italic text-center lg:text-left montserrat text--colors_primary leading-[55px] lg:leading-[40px]">
+          <div className="flex flex-col w-full mt-8 lg:order-1 lg:mt-12">
+            <div className="intro-text text-4xl font-[900] text-center lg:text-left poppins text--colors_primary leading-[55px] lg:leading-[45px]">
               Hey <Emoji symbol="👋" label="waving-hand" />, <br /> I'm{' '}
               <span className="text--colors_default italic">tilo</span>, your new crypto buddy
             </div>
-            <div className="mt-4 text-center lg:text-left lg:mt-6 text-[17px] montserrat">
+            <div className="mt-4 text-center lg:text-left lg:mt-6 text-[17px]">
               I'am here to help you grow and become awesome at trading the top markets around the
               world.
             </div>
-            <div className="w-full mt-6 lg:w-8/12 lg:mt-8">
+            <div className="w-full mt-8 lg:w-8/12">
               <Link href="/sign-up">
                 <a>
                   <button
                     type="button"
-                    className="btn--colors_regular rounded-md w-full py-3 px-4 lg:px-8 font-bold montserrat text-[18px]"
+                    className="btn--colors_regular rounded-md w-full py-3 px-4 lg:px-8 text-[18px] poppins"
                   >
                     Let's get you started
                   </button>
@@ -38,7 +38,7 @@ function HomePage() {
           </div>
         </section>
         <section className="highlights-section px-[12px] w-full mt-16">
-          <h3 className="text-2xl md:text-4xl text--colors_primary text-center font-bold md:mt-20">
+          <h3 className="text-2xl md:text-4xl text--colors_primary text-center font-bold md:mt-28">
             Below are some amazing ways I can help you
           </h3>
           <div className="mt-6 md:mt-12 grid gap-6 lg:grid-cols-2 justify-center xl:grid-cols-3 xl:w-11/12 xl:mx-auto">
@@ -46,27 +46,21 @@ function HomePage() {
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
+                  fill="currentColor"
                   className="w-6 h-6"
                 >
+                  <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" />
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    fillRule="evenodd"
+                    d="M1.323 11.447C2.811 6.976 7.028 3.75 12.001 3.75c4.97 0 9.185 3.223 10.675 7.69.12.362.12.752 0 1.113-1.487 4.471-5.705 7.697-10.677 7.697-4.97 0-9.186-3.223-10.675-7.69a1.762 1.762 0 010-1.113zM17.25 12a5.25 5.25 0 11-10.5 0 5.25 5.25 0 0110.5 0z"
+                    clipRule="evenodd"
                   />
                 </svg>
               }
             >
               I'll help you watch different coins on the crypto market.
-              <div className="text--colors_primary underline ml-auto mt-2">
+              <div className="text--colors_primary ml-auto mt-2">
                 <Link href="/coins-watchlist">
                   <a>explore coins watchlist</a>
                 </Link>
@@ -76,22 +70,20 @@ function HomePage() {
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
+                  fill="currentColor"
                   className="w-6 h-6"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
+                    fillRule="evenodd"
+                    d="M15.22 6.268a.75.75 0 01.968-.432l5.942 2.28a.75.75 0 01.431.97l-2.28 5.941a.75.75 0 11-1.4-.537l1.63-4.251-1.086.483a11.2 11.2 0 00-5.45 5.174.75.75 0 01-1.199.19L9 12.31l-6.22 6.22a.75.75 0 11-1.06-1.06l6.75-6.75a.75.75 0 011.06 0l3.606 3.605a12.694 12.694 0 015.68-4.973l1.086-.484-4.251-1.631a.75.75 0 01-.432-.97z"
+                    clipRule="evenodd"
                   />
                 </svg>
               }
             >
               I'll show you top trending coins on the crypto market anytime.
-              <div className="text--colors_primary underline ml-auto mt-2">
+              <div className="text--colors_primary ml-auto mt-2">
                 <Link href="/trending-coins-watchlist">
                   <a>see trending coins</a>
                 </Link>
@@ -101,22 +93,20 @@ function HomePage() {
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
+                  fill="currentColor"
                   className="w-6 h-6"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z"
+                    fillRule="evenodd"
+                    d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                    clipRule="evenodd"
                   />
                 </svg>
               }
             >
               Create an account to add your favourite coins, and watch them more conveniently.
-              <div className="text--colors_primary underline ml-auto mt-2">
+              <div className="text--colors_primary ml-auto mt-2">
                 <Link href="/sign-up">
                   <a>create an account</a>
                 </Link>
@@ -126,23 +116,21 @@ function HomePage() {
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
+                  fill="currentColor"
                   className="w-6 h-6"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
+                    fillRule="evenodd"
+                    d="M10.5 3.75a6.75 6.75 0 100 13.5 6.75 6.75 0 000-13.5zM2.25 10.5a8.25 8.25 0 1114.59 5.28l4.69 4.69a.75.75 0 11-1.06 1.06l-4.69-4.69A8.25 8.25 0 012.25 10.5zm8.25-3.75a.75.75 0 01.75.75v2.25h2.25a.75.75 0 010 1.5h-2.25v2.25a.75.75 0 01-1.5 0v-2.25H7.5a.75.75 0 010-1.5h2.25V7.5a.75.75 0 01.75-.75z"
+                    clipRule="evenodd"
                   />
                 </svg>
               }
             >
               Explore and learn a lot more about coins on the crypto market. Simply click a coin
               icon, when you are on the coin watchlist page.
-              <div className="text--colors_primary underline ml-auto mt-2">
+              <div className="text--colors_primary ml-auto mt-2">
                 <Link href="/coins-watchlist">
                   <a>coin watchlist page</a>
                 </Link>
@@ -152,22 +140,21 @@ function HomePage() {
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
                   viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
+                  fill="currentColor"
                   className="w-6 h-6"
                 >
                   <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
+                    fillRule="evenodd"
+                    d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z"
+                    clipRule="evenodd"
                   />
+                  <path d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 01-3 0V6.75z" />
                 </svg>
               }
             >
               Keep up to date with news about crypto-currency anytime you like.
-              <div className="text--colors_primary underline ml-auto mt-2">
+              <div className="text--colors_primary ml-auto mt-2">
                 <Link href="/">
                   <a>coming soon</a>
                 </Link>

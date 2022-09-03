@@ -1,4 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Emoji from '../../components/Emoji';
 // import axios from 'axios';
 import MainAppLayout from '../../components/layout-components/MainAppLayout';
 import CoinItem from '../../components/coins-watchlist-page-components/CoinItem';
@@ -7,9 +10,30 @@ import CoinItem from '../../components/coins-watchlist-page-components/CoinItem'
 
 function WatchPage({ coinData }) {
   console.log(coinData);
+  const notify = () =>
+    toast(
+      <div>
+        click on any of the coin icons below{' '}
+        {/* <Emoji symbol="👇" label="Backhand Index Pointing Down" />, */}
+        to explore more about that coin.
+      </div>
+    );
+
+  useEffect(() => {
+    notify();
+  }, []);
+
   return (
     <MainAppLayout>
-      <main className="px-3 sm:px-8 w-full md:w-10/12 mx-auto">
+      <ToastContainer
+        position="top-left"
+        autoClose={10000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+      />
+      <main className="px-3 sm:px-8 w-full md:w-10/12 mx-auto md:mt-8">
         <div className="coin-search-tab">
           <input
             className="custom--input w-full px-4 py-3 rounded"

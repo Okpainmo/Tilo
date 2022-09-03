@@ -10,7 +10,7 @@ function TrendingCoinsPage({ trendingCoins }) {
     <MainAppLayout>
       <main className="trending-coins-page min-h-[500px] w-full md:pt-10 px-[12px] sm:w-4/5 sm:mx-auto md:w-full md:px-10 xl:w-4/5">
         <h1 className="text--colors_primary font-bold text-2xl md:text-4xl">Trending Coins</h1>
-        <div className="section-brief text--colors_secondary text-[12px]">
+        <div className="section-brief text--colors_secondary text-[12px] mt-3">
           A list of 7 trending coins in the last 24 hours. All trending coin prices as stated, are
           relative to the price of 1 Bitcoin(BTC) (source:
           <a href="https://coingecko.com" className="text--colors_primary">
