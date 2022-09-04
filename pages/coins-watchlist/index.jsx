@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Emoji from '../../components/Emoji';
+import { toast } from 'react-toastify';
+// import Emoji from '../../components/Emoji';
 // import axios from 'axios';
 import MainAppLayout from '../../components/layout-components/MainAppLayout';
 import CoinItem from '../../components/coins-watchlist-page-components/CoinItem';
@@ -20,22 +19,12 @@ function WatchPage({ coinData }) {
       </div>
     );
 
-  const loadingNotify = () => toast('Just a moment, coin data is being fetched');
-
   useEffect(() => {
     exploreNotify();
   }, []);
 
   return (
     <MainAppLayout>
-      <ToastContainer
-        position="top-left"
-        autoClose={10000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-      />
       <main className="px-3 sm:px-8 w-full md:w-10/12 mx-auto md:mt-8">
         <div className="coin-search-tab">
           <input
@@ -65,7 +54,7 @@ function WatchPage({ coinData }) {
             <div className="w-3/12 text-center font-bold montserrat xl:w-[25%]">Last 7 days</div>
           </div>
           {coinData.map((coin) => {
-            return <CoinItem coin={coin} key={coin.id} loadingNotify={loadingNotify} />;
+            return <CoinItem coin={coin} key={coin.id} />;
           })}
         </section>
       </main>

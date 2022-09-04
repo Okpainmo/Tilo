@@ -4,7 +4,7 @@ import NewsletterSection from '../NewsletterSection';
 
 function Footer() {
   return (
-    <footer className="border-t py-16 sm:py-32 px-3 sm:px-8 flex flex-col md:flex-row md:flex-wrap mt-12 justify-between xl:px-24">
+    <footer className="border-t pt-16 pb-24 sm:py-32 px-3 sm:px-8 flex flex-col md:flex-row md:flex-wrap mt-12 justify-between xl:px-24">
       <div className="mb-10">
         <div className="brand italic text--colors_primary montserrat text-3xl font-bold md:w-1/2 lg:w-1/3">
           tilo.

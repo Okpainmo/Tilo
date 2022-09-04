@@ -1,7 +1,12 @@
 import React from 'react';
 import Link from 'next/link';
+import { toast } from 'react-toastify';
 
 function Navlinks() {
+  const loadingWatchlist = () => toast('Just a moment, coins-watchlist data is being fetched');
+  const loadingTrending = () =>
+    toast('Just a moment, trending-coins-watchlist data is being fetched');
+
   return (
     <section className="hidden lg:flex ml-20 font-bold mr-auto gap-6 text--colors_primary text-[11px]">
       <Link href="/">
@@ -10,12 +15,18 @@ function Navlinks() {
         </a>
       </Link>
       <Link href="/coins-watchlist">
-        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+        <a
+          onClick={loadingWatchlist}
+          className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700"
+        >
           <span>Coin watchlist</span>
         </a>
       </Link>
       <Link href="/trending-coins-watchlist">
-        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+        <a
+          onClick={loadingTrending}
+          className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700"
+        >
           <span>Trending Coins</span>
         </a>
       </Link>

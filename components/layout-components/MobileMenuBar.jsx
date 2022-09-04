@@ -1,10 +1,15 @@
 import React, { useState, useContext } from 'react';
 import Link from 'next/link';
+import { toast } from 'react-toastify';
 import Socials from '../Socials';
 import NewsletterSection from '../NewsletterSection';
 import UserAuthLinks from '../UserAuthLinks';
 
 function MobileMenuBar({ hideMobileNav, closeMobileNav }) {
+  const loadingWatchlist = () => toast('Just a moment, coins-watchlist data is being fetched');
+  const loadingTrending = () =>
+    toast('Just a moment, trending-coins-watchlist data is being fetched');
+
   return (
     <section
       className={`${
@@ -30,12 +35,18 @@ function MobileMenuBar({ hideMobileNav, closeMobileNav }) {
           </a>
         </Link>
         <Link href="/coins-watchlist">
-          <a className="nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700 w-[80%]">
+          <a
+            onClick={loadingWatchlist}
+            className="nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700 w-[80%]"
+          >
             <span>Coin watchlist</span>
           </a>
         </Link>
         <Link href="/trending-coins-watchlist">
-          <a className="nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700 w-[80%]">
+          <a
+            onClick={loadingTrending}
+            className="nav-link-colors min-w-[100px] hover:tracking-[1px] transition-all duration-700 w-[80%]"
+          >
             <span>Trending Coins</span>
           </a>
         </Link>

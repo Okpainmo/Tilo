@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { toast } from 'react-toastify';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
 
-function CoinItem({ coin, loadingNotify }) {
+function CoinItem({ coin }) {
   const {
     id,
     symbol,
@@ -15,6 +16,8 @@ function CoinItem({ coin, loadingNotify }) {
     total_volume,
     market_cap
   } = coin;
+
+  const loadingNotify = () => toast('Just a moment, coin data is being fetched');
 
   return (
     <section className="py-3 border-b flex ">
