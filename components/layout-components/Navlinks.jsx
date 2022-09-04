@@ -24,6 +24,16 @@ function Navlinks() {
           <span>Crypto News</span>
         </a>
       </Link>
+      <Link href="/policy">
+        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+          <span>Policy</span>
+        </a>
+      </Link>
+      <Link href="/about">
+        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+          <span>About Tilo</span>
+        </a>
+      </Link>
     </section>
   );
 }
