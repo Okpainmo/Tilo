@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import Head from 'next/head';
+// import Head from 'next/head';
 import Footer from './Footer';
 import MobileMenuBar from './MobileMenuBar';
 import Navbar from './Navbar';
 import Preloader from '../Preloader';
+import BottomNavbar from './BottomNavbar';
 
 function MainAppLayout({ children }) {
   const [closeMobileNav, setCloseMobileNav] = useState(true);
@@ -25,6 +26,7 @@ function MainAppLayout({ children }) {
         <MobileMenuBar hideMobileNav={hideMobileNav} closeMobileNav={closeMobileNav} />
         <Navbar showMobileNav={showMobileNav} />
         <div className="pt-20">{children}</div>
+        <BottomNavbar />
         <Footer />
       </div>
     </>
