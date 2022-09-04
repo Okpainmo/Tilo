@@ -15,27 +15,28 @@ function Footer() {
       </div>
       <div className="menu-items flex justify-between gap-x-4 md:w-1/2 lg:w-1/3">
         <div>
-          <h4 className="text--colors_primary font-bold text-base">Tilo Services</h4>
+          <h4 className="text--colors_primary font-bold text-base">Services</h4>
           <ul className="flex flex-col gap-y-3 pt-4 text-[12px]">
             <li>Crypto</li>
             <li>Forex</li>
             <li>Stocks</li>
+            <li>Exchange</li>
           </ul>
         </div>
         <div>
           <h4 className="text--colors_primary font-bold text-base">Help</h4>
           <ul className="flex flex-col gap-y-3 pt-4 text-[12px]">
-            <li>Crypto</li>
-            <li>Forex</li>
-            <li>Stocks</li>
+            <li>FAQs</li>
+            <li>Security</li>
+            <li>Contact us</li>
           </ul>
         </div>
         <div>
           <h4 className="text--colors_primary font-bold text-base">Transparency</h4>
           <ul className="flex flex-col gap-y-3 pt-4 text-[12px]">
-            <li>Crypto</li>
-            <li>Forex</li>
-            <li>Stocks</li>
+            <li>Privacy Policy</li>
+            <li>Terms & Conditions</li>
+            <li>Cookie Policy</li>
           </ul>
         </div>
       </div>

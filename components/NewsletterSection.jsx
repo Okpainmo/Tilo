@@ -2,7 +2,7 @@ import React from 'react';
 
 function NewsletterSection() {
   return (
-    <div className="newsletter-section mt-8 md:mt-20 lg:mt-0 sm:w-[450px] md:w-3/5 lg:w-1/3">
+    <div className="newsletter-section my-8 md:mt-20 lg:mt-0 sm:w-[450px] md:w-3/5 lg:w-1/3">
       <h2 className="text--colors_primary text-xl font-bold mb-2">NewsLetter</h2>
       <span className="text--colors_secondary">
         Join our newsletter, and get a weekly update of top trade news from around the world

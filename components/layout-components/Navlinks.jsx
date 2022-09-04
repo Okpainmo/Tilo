@@ -10,14 +10,14 @@ function Navlinks() {
   return (
     <section className="hidden lg:flex ml-20 font-bold mr-auto gap-6 text--colors_primary text-[11px]">
       <Link href="/">
-        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+        <a className="nav-link-colors mx-3 text-center hover:tracking-[1px] transition-all duration-700">
           <span>Home</span>
         </a>
       </Link>
       <Link href="/coins-watchlist">
         <a
           onClick={loadingWatchlist}
-          className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700"
+          className="nav-link-colors mx-3 text-center hover:tracking-[1px] transition-all duration-700"
         >
           <span>Coin watchlist</span>
         </a>
@@ -25,23 +25,23 @@ function Navlinks() {
       <Link href="/trending-coins-watchlist">
         <a
           onClick={loadingTrending}
-          className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700"
+          className="nav-link-colors mx-3 text-center hover:tracking-[1px] transition-all duration-700"
         >
           <span>Trending Coins</span>
         </a>
       </Link>
-      <Link href="/crypto-news">
-        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
-          <span>Crypto News</span>
+      <Link href="/blog">
+        <a className="nav-link-colors mx-3 text-center hover:tracking-[1px] transition-all duration-700">
+          <span>Blog</span>
         </a>
       </Link>
       <Link href="/policy">
-        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+        <a className="nav-link-colors mx-3 text-center hover:tracking-[1px] transition-all duration-700">
           <span>Policy</span>
         </a>
       </Link>
       <Link href="/about">
-        <a className="nav-link-colors min-w-[100px] text-center hover:tracking-[1px] transition-all duration-700">
+        <a className="nav-link-colors mx-3 text-center hover:tracking-[1px] transition-all duration-700">
           <span>About Tilo</span>
         </a>
       </Link>

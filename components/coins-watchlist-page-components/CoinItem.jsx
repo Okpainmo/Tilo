@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { toast } from 'react-toastify';
 import { Sparklines, SparklinesLine } from 'react-sparklines';
+import { useSelector } from 'react-redux';
 
 function CoinItem({ coin }) {
   const {
@@ -16,6 +17,8 @@ function CoinItem({ coin }) {
     total_volume,
     market_cap
   } = coin;
+
+  console.log(useSelector((store) => console.log(store)));
 
   const loadingNotify = () => toast('Just a moment, coin data is being fetched');
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function SignInCard() {
   return (
@@ -30,12 +31,17 @@ function SignInCard() {
           />
           <span className="text--colors_primary text-[14px]">forgot password?</span>
         </div>
-        <button
-          type="submit"
-          className="montserrat btn--colors_regular mt-4 w-full font-bold py-3 px-4 rounded"
-        >
-          Sign in
-        </button>
+        <Link href="/account">
+          <a>
+            <button
+              // type="submit"
+              type="button"
+              className="montserrat btn--colors_regular mt-4 w-full font-bold py-3 px-4 rounded"
+            >
+              Sign in
+            </button>
+          </a>
+        </Link>
       </form>
     </section>
   );
