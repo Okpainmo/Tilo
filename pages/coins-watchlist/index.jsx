@@ -4,11 +4,13 @@ import { toast } from 'react-toastify';
 // import axios from 'axios';
 import MainAppLayout from '../../components/layout-components/MainAppLayout';
 import CoinItem from '../../components/coins-watchlist-page-components/CoinItem';
+// import { useSelector } from 'react-redux';
 
 // const axios = require('axios');
+// export const coinsData = coinsData;
 
-function WatchPage({ coinData }) {
-  console.log(coinData);
+function WatchPage({ coinsData }) {
+  // const { amount } = useSelector((state) => state.cart);
 
   const exploreNotify = () =>
     toast(
@@ -26,7 +28,7 @@ function WatchPage({ coinData }) {
   return (
     <MainAppLayout>
       <main className="px-3 sm:px-8 w-full md:w-10/12 mx-auto md:mt-8">
-        <div className="coin-search-tab">
+        <div className="coin-search-tab xsm:pt-4">
           <input
             className="custom--input w-full px-4 py-3 rounded"
             type="text"
@@ -53,7 +55,7 @@ function WatchPage({ coinData }) {
             </div>
             <div className="w-3/12 text-center font-bold montserrat xl:w-[25%]">Last 7 days</div>
           </div>
-          {coinData.map((coin) => {
+          {coinsData.map((coin) => {
             return <CoinItem coin={coin} key={coin.id} />;
           })}
         </section>
@@ -69,7 +71,7 @@ export async function getServerSideProps(context) {
   const response = await fetch(
     'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=true'
   );
-  const coinData = await response.json();
+  const coinsData = await response.json();
 
   // const coinData = axios
   //   .get(
@@ -88,7 +90,7 @@ export async function getServerSideProps(context) {
 
   return {
     props: {
-      coinData
+      coinsData
     }
   };
 }

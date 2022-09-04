@@ -1,5 +1,6 @@
 import React from 'react';
 import MainAppLayout from '../../components/layout-components/MainAppLayout';
+import Emoji from '../../components/Emoji';
 
 function AccountPage() {
   return (
@@ -39,6 +40,25 @@ function AccountPage() {
           <h2 className="text-2xl font-bold montserrat pl-2 text--colors_primary border-b after:h-[3px] after:w-[75px] after:block after:bg--secondary after:mt-2">
             My watchlist
           </h2>
+        </section>
+        <section className="mt-8 flex w-full px-3 xsm:px-2 text-xl text--colors_secondary justify-center items-center text-center">
+          <div>
+            Hey <Emoji symbol="👋" label="waving-hand" />, <br />
+            I'am so sorry, the account feature isn't fully setup yet.
+            <br />
+            <a href="https://ajokpainmo.netlify.app" className="text--colors_primary">
+              Andrew
+            </a>{' '}
+            is still building me up <Emoji symbol="😊" label="Smiling Face With Smiling Eyes" />.{' '}
+            <br />
+            When fully set up, this page will contain the coins you select as favourites. That way,
+            I can help you watch them more conveniently.
+            <br />
+            The account feature will be ready in some day's time. <br />
+            For now, do have a nice time exploring all the available features on tilo. <br />
+            <br />
+            <Emoji symbol="🙂🙂🙂" label="Slightly Smiling Faces" />
+          </div>
         </section>
       </main>
     </MainAppLayout>
