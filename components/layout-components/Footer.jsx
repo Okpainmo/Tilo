@@ -41,6 +41,12 @@ function Footer() {
         </div>
       </div>
       <NewsletterSection />
+      <div className="mt-6 text-center text--colors_secondary text-[14px]">
+        APIs by{' '}
+        <a href="https://coingecko.com" className="text--colors_primary">
+          coingecko
+        </a>
+      </div>
     </footer>
   );
 }

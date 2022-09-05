@@ -14,7 +14,7 @@ function MobileMenuBar({ hideMobileNav, closeMobileNav }) {
     <section
       className={`${
         closeMobileNav ? 'nav--slide-out' : 'nav--slide-in'
-      } fixed py-8 px-4 top-0 right-0 translate-x-[-100%] left-0 lg:hidden min-h-screen w-full z-30 bg--default`}
+      } fixed py-8 px-4 top-0 right-0 translate-x-[-100%] left-0 lg:hidden overflow-auto h-screen w-full z-30 bg--default`}
     >
       <div className="close-btn fixed top-8 right-4" onClick={hideMobileNav}>
         <svg
