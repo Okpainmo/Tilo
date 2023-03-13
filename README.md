@@ -12,10 +12,9 @@ Below is a list of the main awesome technologies that I used/will be using on th
 
 - current
 
-1. creen-NextJS (SSR)
+1. NextJS
 2. Tailwind CSS
-3. Redux tool-kit
-4. Crypto APIs (thanks to coingecko)
+3. Crypto APIs (thanks to coingecko)
 
 - extras - coming up for the new features
 
